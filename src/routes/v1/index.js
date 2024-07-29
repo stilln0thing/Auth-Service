@@ -12,7 +12,8 @@ router.post('/signin',
     AuthRequestValidators.validateUserAuth,
     UserController.signIn);
 
-router.get('/isAuthenticated',
+router.get(
+    '/isAuthenticated',
     UserController.isAuthenticated
 );
 
